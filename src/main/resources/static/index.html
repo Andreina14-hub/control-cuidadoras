@@ -11,13 +11,15 @@
 <div class="container">
   <header>
     <h1>Control de Cuidadoras</h1>
-    <div class="month-nav">
-      <button class="btn" id="prev-month">&lt; Anterior</button>
-      <span id="current-month-year"></span>
-      <button class="btn" id="next-month">Siguiente &gt;</button>
+    <div style="display: flex; gap: 10px; align-items: center;">
+      <a href="admin.html" class="btn" style="text-decoration: none; background-color: #4f46e5; color: white;">⚙️ Administrar</a>
+      <div class="month-nav">
+        <button class="btn" id="prev-month">&lt; Anterior</button>
+        <span id="current-month-year"></span>
+        <button class="btn" id="next-month">Siguiente &gt;</button>
+      </div>
     </div>
   </header>
-
   <div class="main-layout">
     <!-- Calendar Container -->
     <div class="calendar-card">

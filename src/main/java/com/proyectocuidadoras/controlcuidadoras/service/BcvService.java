@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class BcvService {
 
-    private static final String BCV_URL = "https://www.bcv.org.ve/";
+    private static final String BCV_URL = "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc";
 
     public Double obtenerTasaEuro() {
         try {

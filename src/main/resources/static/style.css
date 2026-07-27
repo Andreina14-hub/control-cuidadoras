@@ -241,3 +241,26 @@ h1 {
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+/* --- SOLO RESPONSIVE DEL HEADER --- */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;   /* Hace que los elementos caigan uno debajo del otro */
+        gap: 15px;                /* Añade una separación limpia entre el título y los botones */
+        text-align: center;       /* Centra el título de la aplicación */
+        padding: 20px 15px;
+    }
+
+    /* Modificación específica para cuando agregaste el div con el botón de administrar */
+    header > div {
+        flex-direction: column;   /* Apila el botón de administrar y la navegación */
+        width: 100%;
+        align-items: center;
+    }
+
+    .month-nav {
+        justify-content: center;  /* Centra perfectamente los botones anterior/siguiente y el mes */
+        width: 100%;
+        margin-top: 5px;
+    }
+}
