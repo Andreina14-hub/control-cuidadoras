@@ -10,8 +10,8 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:21-jre
 WORKDIR /app
 
-# Copiar el archivo ejecutable compilado
-COPY --from=build /app/target/*.jar app.jar
+# Copiar únicamente el jar ejecutable (evitando los archivos .original)
+COPY --from=build /app/target/*[!original].jar app.jar
 
 EXPOSE 8080
 
